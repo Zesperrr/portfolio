@@ -1,0 +1,168 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, a, small, span, div, input, button, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #35424a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #f39c12;
+}
+
+/* Main Content Styles */
+main {
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main h1, main h2, main h3 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+small b {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #35424a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #f39c12;
+}
+
+/* Tutorials Styles */
+.tutorials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tutorial {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+}
+
+.tutorial a {
+    display: block;
+    padding: 15px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.tutorial a:hover {
+    color: #f39c12;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #35424a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    header a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .search-bar input[type="text"] {
+        width: 80%;
+    }
+
+    .tutorial {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tutorial {
+        width: 100%;
+    }
+}
